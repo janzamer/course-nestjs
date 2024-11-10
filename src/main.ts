@@ -24,6 +24,6 @@ async function bootstrap() {
     origin: 'https://madridinmobiliaria.pe' //solo de este dominio se aceptara peticiones
   })
   
-  await app.listen(process.env.PORT ?? 3000);
+  await app.listen(process.env.PORT || 3000);
 }
 bootstrap();
